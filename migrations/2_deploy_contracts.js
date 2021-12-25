@@ -17,5 +17,5 @@ module.exports = async function(deployer, network, accounts){
 
     await dummy_token.transfer(staking_dapp.address, '1000000000000000000000000')
 
-    await tether_token.transfer(account[1], '100000000000000000000')
+    await tether_token.transfer(accounts[1], '100000000000000000000')
 }
