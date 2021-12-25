@@ -9,15 +9,15 @@ contract Staking_Dapp{
 
     string public name = "Staking Dapp";
     address public owner;
-    Dummy public dummy_token;
-    Tether public tether_token;
+    Dummy_Token public dummy_token;
+    Tether_Token public tether_token;
 
     address[] public stakers;
     mapping(address => uint) public stakingBalance;
     mapping(address => bool) public hasstaked;
     mapping(address => bool) public isstaking;
 
-    constructor(Dummy _dummyToken, Tether _tetherToken) public{
+    constructor(Dummy_Token _dummyToken, Tether_Token _tetherToken) public{
 
         dummy_token = _dummyToken;
         tether_token = _tetherToken;
